@@ -6,10 +6,10 @@ public class Professor extends Persona  {
     public Professor() {}
 
     public void canviarSou(double sou){
-        if(this.sou < 3000 &&){
+        if(sou <= 3000 && sou>=0){
             this.sou= sou;
         }else{
-            System
+            System.out.print("ERROR: EL SOU NO ENTRA EN ELS VALOR DEMANATS");
         }
 
     }
