@@ -46,7 +46,7 @@ public class Main {
         subs.canviarNom("Pedro");
         subs.assignarDni("55555555E");
         subs.canviarSou(2000);
-        subs.assignarSubstitució("13/04/2013", "20/05/2013");
+        subs.assignarSubstitució("13/04/2013", "15/05/2013");
         dades = subs.obtenirDades();
         System.out.println(dades);
 

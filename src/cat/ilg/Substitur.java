@@ -1,5 +1,7 @@
 package cat.ilg;
 
+import java.util.Date;
+
 public class Substitur extends Professor{
     private String dataInici;
     private String dataFi;

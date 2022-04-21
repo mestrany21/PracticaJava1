@@ -14,6 +14,10 @@ public class Professor extends Persona  {
 
     }
     public String obtenirDades(){
-        return super.obtenirDades() + " que te un sou de: " + this.sou;
+        if(super.obtenirDades() == "Dades incompletes"){
+            return "Dades incompletes";
+        }else {
+            return super.obtenirDades() + " que te un sou de: " + this.sou;
+        }
     }
 }
