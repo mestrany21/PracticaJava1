@@ -9,7 +9,7 @@ public class Professor extends Persona  {
         if(sou <= 3000 && sou>=0){
             this.sou= sou;
         }else{
-            System.out.print("ERROR: EL SOU NO ENTRA EN ELS VALOR DEMANATS");
+            System.out.println("ERROR: EL SOU NO ENTRA EN ELS VALOR DEMANATS");
         }
 
     }

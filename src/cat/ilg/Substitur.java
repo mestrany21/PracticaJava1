@@ -3,10 +3,10 @@ package cat.ilg;
 import java.util.Date;
 
 public class Substitur extends Professor{
-    private String dataInici;
-    private String dataFi;
+    private Date dataInici;
+    private Date dataFi;
 
-    public void assignarSubstitució(String dataInici, String dataFi ){
+    public void assignarSubstitució(Date dataInici, Date dataFi ){
         this.dataInici = dataInici;
         this.dataFi = dataFi;
     }
