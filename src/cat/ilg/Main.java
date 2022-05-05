@@ -3,26 +3,22 @@ package cat.ilg;
 import java.util.Date;
 
 public class Main {
-    public static void main(String[] args) {
-
-
-        Persona p1 = new Persona();
-
-        //p1.canviarNom("Marc");
-        //p1.assignarDni("22222222A");
-        //String dades = p1.obtenirDades();
-        //System.out.println(dades);
+    public static void main(String[] args) throws Exception {
 
         Estudiant e = new Estudiant();
         e.assignarDni("33333333R");
         e.posarNota(7.5);
+        e.posarNota(3);
+        e.posarNota(8);
         e.canviarNom("Pepito");
         String dades= e.obtenirDades();
         //System.out.println(dades);
 
         Estudiant e2 = new Estudiant();
         e2.assignarDni("34343434R");
-        e2.posarNota(-9);
+        e2.posarNota(10);
+        e2.posarNota(4);
+        e2.posarNota(6);
         e2.canviarNom("Bilal");
         dades= e2.obtenirDades();
         //System.out.println(dades);
@@ -37,7 +33,7 @@ public class Main {
         Professor pr2 = new Professor();
         pr2.canviarNom("Sheila");
         pr2.assignarDni("77777777F");
-        pr2.canviarSou(4000);
+        pr2.canviarSou(3000);
         dades = pr2.obtenirDades();
         //System.out.println(dades);
 
@@ -49,12 +45,28 @@ public class Main {
         Date dataFi = new Date(2022,9,21);
         subs.assignarSubstitució(dataInici, dataFi );
         dades = subs.obtenirDades();
-        //System.out.println(dades);
+        //System.out.println(dades);*/
 
         Professor pr3 = new Professor();
         pr3.canviarSou(500);
         dades = pr3.obtenirDades();
         //System.out.println(dades);
+
+        Estudiant e3 = new Estudiant();
+        e3.posarNota(10);
+        e3.posarNota(4);
+        e3.posarNota(6);
+        e3.canviarNom("Carlos");
+        dades= e3.obtenirDades();
+
+        Estudiant e4 = new Estudiant();
+        e4.assignarDni("34343434R");
+        //e4.assignarDni("19894874e");
+        e4.posarNota(10);
+        e4.posarNota(4);
+        e4.posarNota(6);
+        e4.canviarNom("Carlos");
+        dades= e4.obtenirDades();
 
         Institut ins = new Institut();
         ins.canviarNom("La Guineueta");
@@ -63,6 +75,9 @@ public class Main {
         ins.afegirPersona(pr);
         ins.afegirPersona(pr2);
         ins.afegirPersona(subs);
+        ins.afegirPersona(pr3);
+        ins.afegirPersona(e3);
+        ins.afegirPersona(e4);
         ins.imprimirInformacio();
     }
 }

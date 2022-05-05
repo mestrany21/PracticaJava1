@@ -5,11 +5,11 @@ public class Professor extends Persona  {
 
     public Professor() {}
 
-    public void canviarSou(double sou){
+    public void canviarSou(double sou) throws Exception {
         if(sou <= 3000 && sou>=0){
             this.sou= sou;
         }else{
-            System.out.println("ERROR: EL SOU NO ENTRA EN ELS VALOR DEMANATS");
+            throw new Exception("ERROR SOU");
         }
 
     }
@@ -17,7 +17,7 @@ public class Professor extends Persona  {
         if(super.obtenirDades() == "Dades incompletes"){
             return "Dades incompletes";
         }else {
-            return super.obtenirDades() + " que te un sou de: " + this.sou;
+            return super.obtenirDades() + " (Professor)que te un sou de: " + this.sou;
         }
     }
 }

@@ -12,13 +12,13 @@ public class Persona {
         this.nom = nom;
     }
 
-    public void assignarDni(String dni){
+    public void assignarDni(String dni) throws Exception {
         if (this.dni == null){
             this.dni = dni;
 
         }else{
 
-            System.out.println("ERROR");
+            throw new Exception("ERROR");
         }
 
     }
